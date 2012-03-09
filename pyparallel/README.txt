@@ -7,10 +7,13 @@ This module encapsulates the access for the parallel port. It provides
 backends for Python running on Windows and Linux. Other platforms are
 possible too but not yet integrated.
 
-This module is still under developement. But it may be useful for
+This module is still under developement, but it may be useful for
 developers.
-The windows version needs a compiled extension and the giveio.sys driver
-for Windows NT/2k/XP. It uses ctypes to access functions in a prebuilt DLL.
+
+The Winodws version needs an installed version of the InpOut32 / InpOutx64
+driver and DLL, available here:
+http://www.highrez.co.uk/Downloads/InpOut32/default.htm
+pyParallel communicates with this using the ctypes.windll module.
 
 It is released under a free software license, see LICENSE.txt for more
 details.
